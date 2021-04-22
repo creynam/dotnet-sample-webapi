@@ -24,6 +24,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<WeatherForecast>))]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
